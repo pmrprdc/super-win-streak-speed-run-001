@@ -3,9 +3,16 @@ import React from "react";
 
 export default function CurrentWins(props){
     
+       const {wins} = props;
+
+
 
     return (
-                <h1>CurrentWins!</h1>
+        <>
+            {wins.map(win=>{
+              return  <h1>{win}</h1>
+            })}
+        </>
     
     )
 
