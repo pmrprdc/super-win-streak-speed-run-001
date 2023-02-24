@@ -9,9 +9,16 @@ export default function CurrentWins(props){
 
     return (
         <>
-            {wins.map((win, index)=>{
-              return  <h1 key={index}>{win}</h1>
-            })}
+                {wins.map((win, i)=>{
+
+                    return(
+                        <>
+                        <h1 key={i}>{win}</h1>
+                        <button key={[`delete${i}`]}>Delete</button>
+                        <button key={[`edit${i}`]}>Edit</button>
+                        </>
+                    )
+                })}
         </>
     
     )
