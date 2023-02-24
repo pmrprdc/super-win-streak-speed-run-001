@@ -9,8 +9,8 @@ export default function CurrentWins(props){
 
     return (
         <>
-            {wins.map(win=>{
-              return  <h1>{win}</h1>
+            {wins.map((win, index)=>{
+              return  <h1 key={index}>{win}</h1>
             })}
         </>
     
